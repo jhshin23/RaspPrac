@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<h2>
+		{% if(op == 'plus'): %}	
+			{% print(op1) %}			
+			{% print('+') %}			
+			{% print(op2) %}			
+			{% print('=') %}			
+			{% print(op1+op2) %}			
+		{% elif(op == 'minus'): %}	
+			{% print(op1) %}			
+			{% print('-') %}			
+			{% print(op2) %}			
+			{% print('=') %}			
+			{% print(op1-op2) %}			
+		{% elif(op == 'multiply'): %}	
+			{% print(op1) %}			
+			{% print('*') %}			
+			{% print(op2) %}			
+			{% print('=') %}			
+			{% print(op1*op2) %}			
+		{% elif(op == 'divide'): %}	
+			{% if(op2 == 0): %}	
+				{% print("0으로 나눌 수 없습니다.") %}
+			{% endif %}	
+			{% print(op1) %}			
+			{% print('/') %}			
+			{% print(op2) %}			
+			{% print('=') %}			
+			{% print(op1/op2) %}			
+		{% else: %}	
+			{% print("연산자 없음") %}
+		{% endif %}	
+
+		</h2>
+	</body>
+</html>
