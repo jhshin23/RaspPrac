@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+        <head>
+                <title>원격 파일 편집기</title>
+                <style>
+                        textarea { text-align: start; resize: none; wrap: off; }
+                </style>
+        </head>
+        <body>
+		<form method="post" action="/editor">
+			<textarea name="memo" cols="40" rows="5">
+{{memo}}
+			</textarea>
+			</br>
+			<input type="submit" value="저장">
+		</form>
+        </body>
+</html>
+
