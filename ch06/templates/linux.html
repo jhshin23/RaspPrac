@@ -1,0 +1,16 @@
+
+<!doctype html>
+<html>
+	<head>
+		<title>원격 리눅스 명령기</title>
+	</head>
+	<body>
+		<form action="/command">
+		<p> $ <input type="text" name="command" value="{{cmd}}" />
+			<input type="submit" value="실행" />
+		</form>
+		<textarea wrap="off" cols="40" rows="5" resize="none">
+{{result}}
+		</textarea>
+	</body>
+</html>
