@@ -9,10 +9,13 @@ def find_longest_name():
 			longest_name = names[i]	
 	return longest_name
 
-print("예제 문자열: ", end = "")
-for i in range(len(names)):
-	print(names[i], end = "")
-	if i < len(names)-1 :
-		print(", ", end = "")
-print()
+def print_ex():
+	print("예제 문자열: ", end = "")
+	for i in range(len(names)):
+		print(names[i], end = "")
+		if i < len(names)-1 :
+			print(", ", end = "")
+	print()
+
+print_ex()
 print("가장 긴 문자열: "+find_longest_name())
